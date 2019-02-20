@@ -143,6 +143,30 @@
         }
     }
 }
+.flex-test-final{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+       
+    }
+    div , p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+        a{
+            margin-right: 1rem;
+        }
+}
 
 
 

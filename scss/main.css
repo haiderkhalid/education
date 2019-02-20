@@ -2146,6 +2146,110 @@ body.mobile-nav-active #mobile-nav-toggle {
   opacity: 1;
 }
 
+.section-popup {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 9999999;
+  background-color: rgba(108, 92, 231, 0.8);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+#popup-1:target, #popup-2:target, #popup-3:target {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.popupcontainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 70%;
+  height: 70%;
+  background-color: #f4f4f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  -webkit-box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+}
+
+.popupcontainer i {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: #fff;
+}
+
+.popupcontainer__right {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30%;
+  height: 100%;
+  overflow: hidden;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.popupcontainer__right--1 {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(108, 92, 231, 0.2)), to(rgba(108, 92, 231, 0.2))), url(../img/pupup-1.jpg);
+  background-image: linear-gradient(to right, rgba(108, 92, 231, 0.2), rgba(108, 92, 231, 0.2)), url(../img/pupup-1.jpg);
+}
+
+.popupcontainer__right--2 {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(108, 92, 231, 0.2)), to(rgba(108, 92, 231, 0.2))), url(../img/pupup-2.jpeg);
+  background-image: linear-gradient(to right, rgba(108, 92, 231, 0.2), rgba(108, 92, 231, 0.2)), url(../img/pupup-2.jpeg);
+}
+
+.popupcontainer__right--3 {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(108, 92, 231, 0.2)), to(rgba(108, 92, 231, 0.2))), url(../img/pupup-3.jpeg);
+  background-image: linear-gradient(to right, rgba(108, 92, 231, 0.2), rgba(108, 92, 231, 0.2)), url(../img/pupup-3.jpeg);
+}
+
+.popupcontainer__left {
+  width: 70%;
+  height: 100%;
+  text-align: right;
+  padding: 0 30px;
+}
+
+.popupcontainer__left h2 {
+  font-size: 1.5rem;
+  color: #494949;
+  margin: 1.5rem;
+}
+
+.popupcontainer__left p {
+  margin: .5rem;
+  padding: .5rem;
+  font-size: .8rem;
+  color: #000;
+}
+
+.popupcontainer__left p div {
+  margin-top: 1rem;
+}
+
 /* =================================== */
 /*  Footer Styles
 /* =================================== */
@@ -2313,6 +2417,51 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .footer-bottom .footer-social a:hover {
   background-color: #6c5ce7;
+}
+
+.flex-test-final {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.flex-test-final p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-test-final div, .flex-test-final p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+}
+
+.flex-test-final a {
+  margin-right: 1rem;
 }
 
 /*-------- end footer Area -------------*/

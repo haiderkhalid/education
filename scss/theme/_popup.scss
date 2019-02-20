@@ -1,0 +1,102 @@
+.section-popup{
+    width: 100vw;
+    height:100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 9999999;
+    // background-image:linear-gradient(rgb(171, 156, 187) , rgb(153, 196, 209));
+    background-color: rgba($primary-color, .8);
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    transition: all .3s;
+    backface-visibility: hidden;
+
+}
+#popup{
+&-1:target , &-2:target , &-3:target{
+    
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+    }  
+
+    
+}
+.popupcontainer{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    width: 70%;
+    height: 70%;
+    // background-image:linear-gradient(rgba(241, 238, 235, 0.897) , rgb(255, 255, 255));
+    background-color: #f4f4f4;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 .8rem 1rem rgba(#000 , .4);
+    border-radius: 3px;
+  
+
+
+    i{
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 100;
+        color: #fff;
+    }
+    &__right {
+        background-position:center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 30%;
+        height: 100%;
+        overflow: hidden;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px; 
+
+
+        &--1{
+            background-image: linear-gradient(to right, rgba($primary-color, .2), rgba($primary-color, .2)), url(../img/pupup-1.jpg);
+
+        }
+        &--2{
+            background-image: linear-gradient(to right, rgba($primary-color, .2), rgba($primary-color, .2)),url(../img/pupup-2.jpeg);
+
+        }
+        &--3{
+            background-image: linear-gradient(to right, rgba($primary-color, .2), rgba($primary-color, .2)),url(../img/pupup-3.jpeg);
+
+        }
+       
+    }
+
+    &__left {
+        width: 70%;
+        height: 100%;
+        text-align: right;
+        padding: 0 30px;
+        
+        
+    h2{
+        font-size: 1.5rem;
+        color: rgb(73, 73, 73);
+        margin: 1.5rem;
+        
+    }
+    p{
+        margin:.5rem;
+        padding:.5rem;
+        font-size: .8rem;
+        color: #000;
+        div{
+            margin-top: 1rem;
+        }
+    }
+    }
+}
