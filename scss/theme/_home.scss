@@ -100,7 +100,8 @@
 
 /*-------- Start Banner Area ------------*/
 .banner-area {
-    background: url(../img/banner-bg.jpg) right;
+    background: url(../img/banner-bg.jpg);
+    background-position-y: 30%; 
     background-size: cover;
     .overlay-bg {
         background-color: rgba(#000, .6);

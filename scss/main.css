@@ -1215,7 +1215,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*-------- Start Banner Area ------------*/
 .banner-area {
-  background: url(../img/banner-bg.jpg) right;
+  background: url(../img/banner-bg.jpg);
+  background-position-y: 30%;
   background-size: cover;
 }
 
