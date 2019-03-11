@@ -34,7 +34,7 @@
     ul li {
         margin-bottom: 10px;
         a {
-            color: $text-color;
+            color: #fff;
             @include transition();
             &:hover {
                 color: $primary-color;
